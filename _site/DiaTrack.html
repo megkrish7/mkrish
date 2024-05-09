@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
 
-  <title>Meghashyam Krishnasamy</title>
+  <title>DiaTrack</title>
   <meta name="description" content="Personal Website">
   <meta name="author" content="Meghashyam Krishnasamy">
   <meta name="HandheldFriendly" content="True">
@@ -16,13 +16,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Meghashyam Krishnasamy">
+  <meta name="twitter:title" content="DiaTrack">
   <meta name="twitter:description" content="Personal Website">
   
   <meta name="twitter:image" content="/images/favicons/favicon-194x194.png" />
 
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Meghashyam Krishnasamy">
+  <meta property="og:title" content="DiaTrack">
   <meta property="og:description" content="Personal Website">
   <meta property="og:image" content="/images/favicons/favicon-194x194.png" />
 
@@ -47,7 +47,7 @@
   <meta name="theme-color" content="#ffffff">
   
   <link rel="stylesheet" href="/css/main.css?1715231274060135000">
-  <link rel="canonical" href="http://localhost:4000/">
+  <link rel="canonical" href="http://localhost:4000/DiaTrack.html">
   <link rel="alternate" type="application/rss+xml" title="Meghashyam Krishnasamy" href="/feed.xml">
   <script src="https://kit.fontawesome.com/XXXXXXXXXX.js" crossorigin="anonymous"></script>
   
@@ -165,12 +165,77 @@
 
     <div class="content-wrapper">
       <div class="content-wrapper__inner">
-        <div class="homepage">
-  <h1>Welcome to My Portfolio</h1>
-  <p>Explore my projects and learn more about me.</p>
-  <a href="/about.html">About Me</a>
-  <a href="/projects.html">Projects</a>
+        <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+
+<div class="header">
+    <h1>DiaTrack - Advanced Diabetic Care</h1>
+    <h2>Problem Statement</h2>
+    <p>Managing diabetes effectively requires constant monitoring of health metrics, which can be particularly challenging for the elderly who prefer simplicity in technology usage. Many elderly diabetic patients seek an all-in-one application that not only helps track their daily health data but also simplifies the process of finding local pharmacies with insulin in stock. The need for a straightforward user interface that accommodates limited tech-savviness without compromising on functionality is critical in empowering these patients to manage their condition efficiently.</p>
+
+    <h2>Solution Developed</h2>
+    <p>DiaTrack is designed to serve as a comprehensive health management tool specifically tailored for diabetics, especially catering to the needs of the elderly. Developed with a focus on simplicity and accessibility, the application aims to tackle the following problems:</p>
+    <ul>
+        <li><strong>Comprehensive Health Tracking:</strong> Users can easily input and monitor their blood glucose levels, dietary intake, and medication schedules.</li>
+        <li><strong>Machine Learning Predictions:</strong> Utilizes historical data to predict future health trends and glucose levels, aiding in proactive health management.</li>
+        <li><strong>Local Pharmacy Search:</strong> Integrates a KNN clustering algorithm to locate nearby pharmacies that have insulin in stock, displayed via an interactive map.</li>
+    </ul>
+    <p>This solution not only simplifies daily health tracking but also enhances the autonomy of elderly patients in managing diabetes, potentially reducing emergency situations and improving overall health outcomes.</p>
+
+    <h3>Project Overview</h3>
+    <h4>Technology Stack:</h4>
+    <ul>
+        <li>React.js</li>
+        <li>Node.js</li>
+        <li>SQLite</li>
+        <li>Python</li>
+    </ul>
+
+    <h3>Gallery:</h3>
+    <div id="diabeticAppGallery" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="3000">
+                <img src="images/Pulse/pic1.png" class="d-block w-100" alt="User-friendly dashboard">
+            </div>
+            <div class="carousel-item" data-interval="3000">
+                <img src="images/Pulse/pic1.png class="d-block w-100" alt="Health metrics tracking">
+            </div>
+            <div class="carousel-item" data-interval="3000">
+                <img src="images/Pulse/pic1.png" class="d-block w-100" alt="Pharmacy stock map">
+            </div>
+            <div class="carousel-item" data-interval="3000">
+                <img src="images/Pulse/pic1.png" class="d-block w-100" alt="Glucose level prediction chart">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#diabeticAppGallery" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#diabeticAppGallery" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <h3>Technical Challenges and Solutions</h3>
+    <h4>Data Management and Security</h4>
+    <p><strong>Challenge:</strong> Securely storing and managing sensitive health data within an easy-to-use application for elderly users.</p>
+    <p><strong>Solution:</strong> We implemented SQLite to handle data storage with robust encryption protocols to ensure data security and privacy. The backend, built with Node.js, provides a secure and scalable server environment.</p>
+    
+    <h4>User Interface Simplicity and Accessibility</h4>
+    <p><strong>Challenge:</strong> Creating an intuitive and accessible interface that elderly users find easy to navigate.</p>
+    <p><strong>Solution:</strong> The frontend, developed using React.js, offers a clean, straightforward layout with large buttons and text, ensuring high usability and accessibility.</p>
+    
+    <h4>Real-Time Pharmacy Stock Updates</h4>
+    <p><strong>Challenge:</strong> Providing up-to-date information on insulin availability at local pharmacies.</p>
+    <p><strong>Solution:</strong> Integrating the KNN clustering algorithm with real-time data feeds from pharmacies allows the app to display current insulin stock levels effectively.</p>
 </div>
+
 
     
 
