@@ -1,0 +1,34 @@
+# projects section data
+- name: InFrame - Representation in Film
+  gh_user: 
+  repo: 
+  link: InFrame.html
+  img: /images/hierhome.jpg
+  desc: A web application designed for the Academy of Motion Picture Arts and Sciences 
+  
+        to help them organize film data about underrepresented minorities.
+
+- name: DiaTrack
+  gh_user: 
+  repo: 
+  img: /images/homepage.jpg
+  desc: A simple all-in-one solution designed to help diabetic patients keep track of their health history and to 
+
+        provide access to nearby pharmacies.
+
+- name: Pulse
+  gh_user:
+  repo: 
+  link: Pulse.html
+  img: /images/pulse.jpg
+  desc: A mobile application designed to connect citizens in distress and first responders to streamline rescue efforts
+
+        and first aid.
+
+- name: Ez-Compose
+  gh_user: 
+  repo: 
+  img: /images/ezcompose.jpg
+  desc: A musician's best friend! This mobile application is designed to help musicians write music by live composing during
+
+        jam sessions.
